@@ -19,7 +19,7 @@ The script <ins>Enrichment_AOre_LORe_inter_homologs.R</ins> is used to plot supp
 
 ## Ohnolog expression analysis and dosage compensation
 
-The scripts <ins>ohnologs pair analysis.R</ins> <ins>and Rescuing_pair</ins> respectively analysis the correlation of ohnolog expression and the dosage compensated pairs (Figures 3, 4; supplementary figures 4,6).
+The scripts <ins>ohnologs pair analysis.R</ins> <ins>and Rescuing_pair.R</ins> respectively analysis the correlation of ohnolog expression and the dosage compensated pairs (Figures 3, 4; supplementary figures 4,6).
 
 
 
