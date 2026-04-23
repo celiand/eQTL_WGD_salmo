@@ -1,0 +1,69 @@
+---
+title: "WGD-HiC"
+author: "Marie and Celian"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+## Hi-C follow-up analysis instructions
+
+### Input files
+
+We will provide:
+
+1. `trans_eqtl_pairs_for_hic.tsv`
+
+This table contains:
+- snp_id  
+- snp_chr  
+- snp_pos  
+- gene_id  
+- gene_chr  
+- gene_tss  
+- category (based on the four classes used in the manuscript)  
+- compensation_flag (TRUE/FALSE)  
+- pair_type (target / random)
+
+2. BED file(s) with WGD annotations:
+- homeologous regions  
+- AORe / LORe regions  
+
+---
+
+### Analysis steps
+
+#### (1) Map SNP and gene positions to Hi-C bins
+
+Please map both:
+- SNP positions (`snp_chr`, `snp_pos`)  
+- Gene anchor positions (`gene_chr`, `gene_tss`)  
+
+to the corresponding Hi-C bins.
+
+---
+
+#### (2) Extract Hi-C contact information
+
+From the Hi-C matrix, extract contact values for each SNP–gene pair.
+
+For each pair, please add the following columns:
+
+- `balanced_contact`  
+- `oe_contact` (observed/expected contact)  
+- `same_tad` (TRUE/FALSE)  
+- `same_loop` (TRUE/FALSE)  
+
+---
+
+#### (3) Comparison between target and control pairs
+
+Using the `pair_type` column:
+- Compare **target vs random pairs**  
+
+
+---
+
+### Notes
+
+- For intra-chromosomal pairs, we may need to  account for genomic distance when comparing contact frequencies.  
+- If needed, matched controls (distance / chromosome) can be refined.  
