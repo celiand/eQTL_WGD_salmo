@@ -1,0 +1,5 @@
+duplicatestatus	observed_n	mean_random_n	sd_random_n	mean_enrichment	se_enrichment	empirical_p_upper	empirical_p_lower
+Inter-chromosomal non-syntenic	5800	5825.268	7.0286255824007	0.995663793544169	3.79896077534413e-05	1	0
+Inter-chromosomal syntenic	209	182.848	6.01673475375948	1.14426691047809	0.00119513162100279	0	1
+Intra-chromosome different syntenic block	1969	2352.512	23.5236310381118	0.837061256021834	0.000264646855591312	1	0
+Intra-chromosome same syntenic block	1610	1226.153	23.5357498823072	1.31353411102547	0.000798917169346477	0	1
